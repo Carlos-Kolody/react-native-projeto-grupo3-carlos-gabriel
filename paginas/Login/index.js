@@ -38,8 +38,11 @@ export default function Login({ navigation }) {
           />
 
           <View style={estilos.formContainer}>
-            <Text style={estilos.titulo}>Já tem conta? Faça seu login:</Text>
-
+                              <TouchableOpacity onPress={() => navigation.navigate('Cadastro')}>
+                                <Text style={estilos.titulo}>
+                                  Já tem conta? Cadastre-se
+                                </Text>
+                              </TouchableOpacity>
             <TextInput
               style={estilos.input}
               placeholder="Digite seu nome completo"
